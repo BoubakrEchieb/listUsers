@@ -52,6 +52,7 @@ Template.showUsers.events({
 Template.showUsers.events({
     'submit #update-form'(event,template){
         event.preventDefault();
+        console.log($(this));
         let newUsername = template.$('#new-username').val();
         let newEmail = template.$('#new-email').val();
         let _id = this._id;
@@ -63,9 +64,9 @@ Template.showUsers.events({
         }
         template.$('#new-username').val('');
         template.$('#new-email').val('');
-        template.$('#toggle-btn').click();
         return false;
     }
 });
+
 
 
