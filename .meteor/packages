@@ -20,6 +20,9 @@ shell-server@0.2.1            # Server-side component of the `meteor shell` comm
 
 twbs:bootstrap
 aldeed:autoform
+
+kadira:flow-router
+kadira:blaze-layout
+aldeed:simple-schema
+arillo:flow-router-helpers
 aldeed:collection2
-autopublish
-insecure
