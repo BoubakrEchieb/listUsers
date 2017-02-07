@@ -3,13 +3,13 @@ import {FlowRouter} from 'meteor/kadira:flow-router';
 
 Meteor.methods({
     //add new user
-   addNewUser(user,callback) {
+   addNewUser(user) {
        console.log( newUser);
        const newUser = {
            username: user.username,
-           email: user.emails[0].address,
+           email: user.email,
            password: user.password
        }
-       Accounts.createUser(newUser, callback);
+       Accounts.createUser(newUser);
    }
 });

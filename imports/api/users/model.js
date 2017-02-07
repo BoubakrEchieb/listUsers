@@ -6,22 +6,10 @@ export const userSchema = new SimpleSchema({
         optional: false,
         label: 'Username:'
     },
-    emails: {
-        type: [Object],
+    email: {
+        type: 'String',
         optional: false,
-        label: 'Adresses Email'
-    },
-    'emails.$.address': {
-        type: String,
-        regEx: SimpleSchema.RegEx.Email,
-        label: 'Adresse'
-    },
-    'emails.$.verified': {
-        type: Boolean,
-        optional: true,
-        autoform: {
-            omit: true
-        }
+        label: 'Email: '
     },
     password: {
         type: String,

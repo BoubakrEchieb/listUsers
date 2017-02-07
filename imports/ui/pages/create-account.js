@@ -17,10 +17,10 @@ AutoForm.hooks({
 
             Meteor.call('addNewUser', user, (err) => {
                 if (err) {
-                    toastr.error('Faild to register new user','faild!');
-                    this.done(new Error("Submission failed"));
+                    toastr.error('Failed to register new user','failed!');
+                    this.done(new Error('Submission failed'));
                 } else {
-                    toastr.success('Registred with success !', 'welcome');
+                    toastr.success('Registered with success !', 'welcome');
                     FlowRouter.go('home');
                 }
             });

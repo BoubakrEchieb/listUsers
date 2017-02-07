@@ -7,7 +7,7 @@ import '/imports/ui/pages/create-account.js';
 import '/imports/ui/pages/home.js';
 import '/imports/ui/layouts/menu.js';
 
-import '/imports/ui/styles/main.css';
+import '/imports/ui/stylesheets/main.css';
 
 
 
