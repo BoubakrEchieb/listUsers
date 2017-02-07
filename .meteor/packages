@@ -26,3 +26,12 @@ kadira:blaze-layout
 aldeed:simple-schema
 arillo:flow-router-helpers
 aldeed:collection2
+chrismbeckett:toastr
+accounts-base
+accounts-password
+msavin:mongol
+accounts-ui
+accounts-facebook
+accounts-google
+accounts-github
+accounts-twitter

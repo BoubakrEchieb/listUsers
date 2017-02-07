@@ -1,32 +1,29 @@
-import {Users} from '/imports/api/users/model.js';
 import {AutoForm} from 'meteor/aldeed:autoform';
-import {FlowRouter} from 'meteor/kadira:flow-router';
 import {Template} from 'meteor/templating';
+import {Meteor} from 'meteor/meteor';
+import {userSchema} from '../../api/users/model'
 
 import '/imports/ui/pages/create-account.html';
-import {UserSchema} from '../../api/users/model';
 
 Template.createAccount.helpers({
     userSchema() {
-        return UserSchema;
+        return userSchema;
     }
 });
 
 AutoForm.hooks({
     formCreateAccount: {
         onSubmit(user) {
-            console.log(user);
 
-            Users.insert(user, (err) => {
+            Meteor.call('addNewUser', user, (err) => {
                 if (err) {
-                    alert(err.reason);
-
+                    toastr.error('Faild to register new user','faild!');
                     this.done(new Error("Submission failed"));
                 } else {
+                    toastr.success('Registred with success !', 'welcome');
                     FlowRouter.go('home');
                 }
             });
-
             return false;
         }
     }

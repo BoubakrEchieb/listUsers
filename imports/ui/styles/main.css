@@ -8,3 +8,6 @@
 .pull-right{
     display: inline-block;
 }
+#main{
+    margin-top: 50px;
+}

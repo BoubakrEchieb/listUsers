@@ -1,17 +1,27 @@
-import {Mongo} from 'meteor/mongo';
 import {SimpleSchema} from 'meteor/aldeed:simple-schema';
 
-
-export const UserSchema = new SimpleSchema({
+export const userSchema = new SimpleSchema({
     username: {
         type: String,
         optional: false,
         label: 'Username:'
     },
-    email: {
-        type: String,
+    emails: {
+        type: [Object],
         optional: false,
-        label: 'Email:',
+        label: 'Adresses Email'
+    },
+    'emails.$.address': {
+        type: String,
+        regEx: SimpleSchema.RegEx.Email,
+        label: 'Adresse'
+    },
+    'emails.$.verified': {
+        type: Boolean,
+        optional: true,
+        autoform: {
+            omit: true
+        }
     },
     password: {
         type: String,
@@ -37,32 +47,45 @@ export const UserSchema = new SimpleSchema({
                 return new Error('verify password');
             }
         }
+    },
+    createdAt: {
+        type: Date,
+        autoValue: function () {
+            if (this.isInsert) {
+                return new Date;
+            } else {
+                this.unset();
+            }
+        },
+        autoform: {
+            omit: true
+        }
+    },
+    services: {
+        type: Object,
+        optional: true,
+        blackbox: true,
+        autoform:{
+            omit: true
+        }
     }
 });
 
-export const Users = new Mongo.Collection('users');
-
-const insertUser = Users.insert;
-Users.insert = function (user, simulationOrCallback) {
-    let simulation, callback;
-    if (typeof simulationOrCallback == 'boolean') {
-        simulation = simulationOrCallback;
-    } else {
-        callback = simulationOrCallback;
-    }
-
-    if (Meteor.isServer || simulation) {
-        userSchema.validate(user);
-
-        return insertUser.apply(this, [user, callback]);
-
-    } else {
-        Meteor.call('addUser', user, callback);
-    }
-};
-
+export const Users = Meteor.users;
 
 Users.allow({
+    insert() {
+        return false;
+    },
+    remove() {
+        return false;
+    },
+    update() {
+        return false;
+    }
+});
+
+Users.deny({
     insert() {
         return false;
     },

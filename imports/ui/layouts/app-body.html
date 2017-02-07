@@ -1,7 +1,16 @@
 <template name="appBody">
     {{#if currentUser}}
-        {{> Template.dynamic template=main}}
+        <div class="container">
+            {{>menu}}
+        </div>
+        <div class="container" id="main">
+            {{> Template.dynamic template=main}}
+        </div>
     {{else}}
-        {{>login}}
+        {{#if createAccount}}
+            {{> Template.dynamic template=main}}
+        {{else}}
+            {{>login}}
+        {{/if}}
     {{/if}}
 </template>
