@@ -1,3 +1,32 @@
 <template name="home">
-    <h1>Home page</h1>
+  <div class="home">
+      <div class="container">
+          <div class="row">
+            <form id="formInsertPost">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="inputTitle" placeholder="Title">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="3" placeholder="what's up ?" id="inputContent"></textarea>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-primary pull-right"><span class="glyphicon glyphicon-ok-circle"></span> Post</button>
+                </div>
+            </form>
+          </div>
+          <div class="container">
+              {{#each getListPost}}
+                  <section class="row post well">
+                      <aside class="col-lg-4 col-md-4">
+                          Author: {{authorName}}
+                      </aside>
+                      <article class="col-lg-8 col-md-8">
+                          <h3>{{title}}</h3>
+                          {{content}}
+                      </article>
+                  </section>
+              {{/each}}
+          </div>
+      </div>
+  </div>
 </template>

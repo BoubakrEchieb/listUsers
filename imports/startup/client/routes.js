@@ -1,5 +1,6 @@
 import {FlowRouter} from 'meteor/kadira:flow-router';
 import {BlazeLayout} from 'meteor/kadira:blaze-layout';
+import {Posts} from '/imports/api/posts/model.js';
 
 import '/imports/ui/layouts/app-body.js';
 import '/imports/ui/pages/login.js';
@@ -15,7 +16,8 @@ import '/imports/ui/stylesheets/main.css';
 FlowRouter.route('/', {
     name: 'home',
     action() {
-        BlazeLayout.render('appBody', {main: 'home'});
+        let posts = Posts.find();
+        BlazeLayout.render('appBody', {main: 'home', listPosts: posts});
     }
 });
 
@@ -23,6 +25,6 @@ FlowRouter.route('/', {
 FlowRouter.route('/createAccount', {
     name: 'createAccount',
     action() {
-        BlazeLayout.render('appBody', {main: 'createAccount',createAccount: true});
+        BlazeLayout.render('appBody', {main: 'createAccount', createAccount: true});
     }
 });

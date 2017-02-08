@@ -14,7 +14,6 @@ Template.createAccount.helpers({
 AutoForm.hooks({
     formCreateAccount: {
         onSubmit(user) {
-
             Meteor.call('addNewUser', user, (err) => {
                 if (err) {
                     toastr.error('Failed to register new user','failed!');

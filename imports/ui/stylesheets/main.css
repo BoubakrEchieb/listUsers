@@ -9,5 +9,8 @@
     display: inline-block;
 }
 #main{
-    margin-top: 50px;
+    margin-top: 80px;
+}
+.btn{
+    margin-bottom: 10px;
 }
