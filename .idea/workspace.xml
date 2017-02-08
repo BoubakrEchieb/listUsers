@@ -6,21 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6bed950-0f16-43d3-ae69-257d76f5d885" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/publications.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/api/posts/methods.js" afterPath="$PROJECT_DIR$/imports/api/posts/methods.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/api/posts/model.js" afterPath="$PROJECT_DIR$/imports/api/posts/model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/api/posts/publications.js" afterPath="$PROJECT_DIR$/imports/api/posts/publications.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/api/users/methods.js" afterPath="$PROJECT_DIR$/imports/api/users/methods.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/api/users/publications.js" afterPath="$PROJECT_DIR$/imports/api/users/publications.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/startup/client/index.js" afterPath="$PROJECT_DIR$/imports/startup/client/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/startup/client/routes.js" afterPath="$PROJECT_DIR$/imports/startup/client/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/startup/server/index.js" afterPath="$PROJECT_DIR$/imports/startup/server/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/layouts/menu.html" afterPath="$PROJECT_DIR$/imports/ui/layouts/menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/create-account.js" afterPath="$PROJECT_DIR$/imports/ui/pages/create-account.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/home.html" afterPath="$PROJECT_DIR$/imports/ui/pages/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/home.js" afterPath="$PROJECT_DIR$/imports/ui/pages/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/stylesheets/main.css" afterPath="$PROJECT_DIR$/imports/ui/stylesheets/main.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -709,7 +695,7 @@
       <workItem from="1486366975797" duration="30524000" />
       <workItem from="1486454083447" duration="27118000" />
       <workItem from="1486486621799" duration="155000" />
-      <workItem from="1486540816536" duration="27995000" />
+      <workItem from="1486540816536" duration="28148000" />
     </task>
     <task id="LOCAL-00001" summary="adding imports folder">
       <created>1486400131843</created>
@@ -732,11 +718,18 @@
       <option name="project" value="LOCAL" />
       <updated>1486485985859</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add posts">
+      <created>1486572037983</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1486572037983</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119624000" />
+    <option name="totallyTimeSpent" value="119777000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -755,13 +748,13 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776618" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19624217" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5887265" sideWeight="0.49701938" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5887265" sideWeight="0.49701938" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25260806" sideWeight="0.5154639" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60751563" sideWeight="0.49784017" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962743" sideWeight="0.83505154" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19937369" sideWeight="0.50215983" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48851773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48851773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -798,7 +791,8 @@
     <MESSAGE value="adding imports folder" />
     <MESSAGE value="fix login/logout and subscribe" />
     <MESSAGE value="fix  subscribe form" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix  subscribe form" />
+    <MESSAGE value="add posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="add posts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
